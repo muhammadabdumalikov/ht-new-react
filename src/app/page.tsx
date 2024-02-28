@@ -41,7 +41,7 @@ export default function Home() {
 
   const onUrlInputSubmit = async () => {
     setUrlLoading(!urlLoading);
-    axios.get('http://localhost:3001/profile', { params: { url } }).then(data => {
+    axios.get('http://194.163.142.231:3001/profile', { params: { url } }).then(data => {
       setUserInfo(prev => {
         return {
           ...prev,
