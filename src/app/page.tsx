@@ -11,7 +11,7 @@ export default function Home() {
     name: '',
     img: '',
     location: '',
-    company: ''
+    sub_title: ''
   });
 
   const { Meta } = Card;
@@ -47,7 +47,7 @@ export default function Home() {
           ...prev,
           location: data?.data.location.default,
           img: data?.data.profile_picture,
-          company: data?.data.sub_title,
+          sub_title: data?.data.sub_title,
           name: data?.data.first_name + data?.data.last_name
         }
       })
@@ -76,7 +76,7 @@ export default function Home() {
             style={{ width: 240, height: 400 }}
             cover={<Image className='w-full h-full' alt="example" src={userInfo.img} />}
           >
-            <Meta title={userInfo.name} description={userInfo.company} />
+            <Meta title={userInfo.name} description={userInfo.sub_title} />
           </Card>
           : null
         }
