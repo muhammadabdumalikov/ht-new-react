@@ -48,7 +48,7 @@ export default function Home() {
           location: data?.data.location.default,
           img: data?.data.profile_picture,
           sub_title: data?.data.sub_title,
-          name: data?.data.first_name + data?.data.last_name
+          name: `${data?.data.first_name} ${data?.data.last_name}`
         }
       })
       setUrlLoading(false);
