@@ -1,10 +1,12 @@
 'use client'
 import React from 'react';
 import HomeTop from '@/components/home/top';
+import PopularSection from '@/components/home/popular';
 
 const Home: React.FC = () => {
-  return <main className="flex flex-grow flex-col items-center justify-between px-60">
+  return <main className="flex-grow items-center bg-light-gray justify-between">
     <HomeTop />
+    <PopularSection />
   </main>
 };
 
